@@ -427,7 +427,7 @@
 			height: 15px;
 		}
 		.footer .hah{
-			width: 520px;
+			width: 650px;
 			margin-top:15px;
 			height: 15px;
 			text-align: center;
@@ -442,6 +442,7 @@
 			margin-right: 8px;
 			list-style-type: ;
 			color:#fff;
+			width: 100px;
 		}
 		.footer .bottom a{
 			font-size: 14px;
@@ -449,7 +450,10 @@
 			color: #fff;
 			margin-left: 8px;
 			text-align: center;
-			float: right;
+			display: inline;
+		}
+		.footer .bottom .diyi{
+			list-style: none;
 		}
 		.lastbg{
 			background-color: #1c1b29;
