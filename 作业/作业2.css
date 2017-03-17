@@ -427,18 +427,21 @@
 			height: 15px;
 		}
 		.footer .hah{
-			width: 500px;
+			width: 520px;
 			margin-top:15px;
 			height: 15px;
 			text-align: center;
 		}
 		.footer{
-			width: 400px;
+			width: 1000px;
 			margin: 0px auto;
 		}
 		.footer .bottom li{
 			list-style:inside;
 			float: left;
+			margin-right: 8px;
+			list-style-type: ;
+			color:#fff;
 		}
 		.footer .bottom a{
 			font-size: 14px;
@@ -446,6 +449,7 @@
 			color: #fff;
 			margin-left: 8px;
 			text-align: center;
+			float: right;
 		}
 		.lastbg{
 			background-color: #1c1b29;
