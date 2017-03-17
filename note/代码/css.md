@@ -14,7 +14,6 @@
 * float：浮动
 * margin：上 右 下 左 外边框
 * padding：内边框
-* .box：hover{}鼠标悬浮变成什么样
 * text-decoration:none; 下划线取消
 * margin：0 auto；块元素横向居中(其中0可变XXpx改变上下外边框)
 * overflow：hidden   隐藏多余元素（放在父集可以使子集加边框时不影响父集）
@@ -38,4 +37,10 @@
 * border：--px bashed 颜色；形成一点颜色的虚线边框
 * border-radius：（）px 倒圆角
 * box-sizing：border-box；把实宽变成width
-###
+###动画
+* .box：hover{}鼠标悬浮变成什么样 需要父子级关系
+* transform：；  转换
+* transition：transform  5s   控制过渡效果(指定一个元素的某一个属性成过渡效果)
+* rotate（deg）旋转
+* scale（px）   缩放   正值是放大  负值是缩小
+* translateX/Y()  平移
