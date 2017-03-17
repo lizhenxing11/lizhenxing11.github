@@ -1,0 +1,23 @@
+cd ..      返回上级目录
+cd 目录名  进入目录
+ls 查看当前目录下的文件
+cd ../..
+cd e:   进入盘符
+
+git init 初始化一个git仓库
+
+git status  查看文件状态
+
+git add . 将编辑区文件添加到暂存区
+
+git commit -m "备注信息"  将暂存区文件提交到分支
+
+！！！ tell me who you are.
+
+git config --
+
+git remote + 自己项目的地址（本行复制就可以了）
+
+git push origin master  将本地分支同步到远程分支
+
+看提示信息！！！
