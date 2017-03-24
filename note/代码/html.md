@@ -28,5 +28,13 @@ html模板
 </ul>
 <a href=""></a>
 ```
-*&nbsp；空格
-<br> 回车
+* &nbsp；空格
+* <br> 回车
+* section   局部区域
+* nav  导航
+* aside 侧边栏
+* header   头部
+* footer   脚步
+* main   主要区域
+* article  文章
+* title  文章标题

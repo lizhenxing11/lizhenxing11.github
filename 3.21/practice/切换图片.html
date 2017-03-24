@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script src=jquery.js></script>
+<img src="1.jpg" alt="">
+	<div>
+		<button class="ceshi">ceshi</button>
+		<button class="ceshi">ceshi</button>
+		<button class="ceshi">ceshi</button>
+		<button class="ceshi">ceshi</button>
+	</div>
+	
+	<script>
+		$('.ceshi').click(function(){
+			var ind = $(this).index()
+			var picsrc = [
+				'1.jpg',
+				'2.jpg',
+				'3.jpg',
+				'4.jpg'
+			]
+		
+			$('img').attr('src',picsrc[ind])
+		})
+	</script>
+</body>
+</html>

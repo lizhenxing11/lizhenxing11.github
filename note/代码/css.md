@@ -53,6 +53,7 @@
 * backface-visibility: hidden; 翻转到背面隐藏  需要配合prespective使用
 * transform-style: preserve-3d;   让子集具有3d效果
 # 表单
+```
 * <form action="提交的服务器" name="没有那么不能提交"></form>    表单
 * <button></button>    <input type="button">按钮
 * <input type="text">   文本框
@@ -62,3 +63,5 @@
 * <input type="submit">     提交按钮
 * <textarea name="" id="" cols="30行数" rows="10列数"></textarea>     文本域
 * placeholder    文本框里添加字体  但当鼠标点到时文本消失
+```
+* 打断点 @media screen and（max-width（最大宽度））{要改变的样式}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+
+	}
+		nav {
+			width: 100%;
+			background-color: black;
+			height: 300px;
+			overflow: hidden;
+		}
+		button{
+			display: none;
+			margin: 0 auto;
+			width: 50%;
+			color: #fff;
+			background-color: black;
+			/*border: none;*/
+		}
+		ul{
+			margin: 100px auto;
+			width: 50%;
+		}
+		li{
+			float: left;
+			/*border: 1px solid blue;*/
+			width: 100px;
+			list-style: none;
+			text-align: center;
+			width: 20%;
+			color: #fff;
+		}
+		.active{
+			display: block;
+		}
+
+		@media screen and (max-width:640px){
+			ul{
+				display: none;
+				margin: 0 auto;
+				width: 50%;
+			}
+			li{
+			/*border: 1px solid blue;*/
+			list-style: none;
+			text-align: center;
+			float: none;
+			width: 100%;
+			}
+			button{
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav>
+	<button>mune</button>
+		<ul class="one">
+			<li>测试</li>
+			<li>测试</li>
+			<li>测试</li>
+			<li>测试</li>
+			<li>测试</li>
+		</ul>
+	</nav>
+	<script src="jquery.js"></script>
+	<script>
+		$('button').click(function(){
+			$('ul').toggleClass('active')
+		})
+	</script>
+</body>
+</html>

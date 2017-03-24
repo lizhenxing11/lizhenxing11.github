@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="text1">
+	<input type="text" class="text2">
+	<button>获取信息</button>
+	<script>
+		var txt1= document.querySelector('.text1')
+		var txt2= document.querySelector('.text2')
+		var btn= document.querySelector('button')
+		btn.onclick=function(){
+			var heihei=txt1.value
+			var hehe=txt2.value
+			alert(heihei+hehe)	
+		}
+	</script>
+</body>
+</html>

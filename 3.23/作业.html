@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="text">
+	<button class="btn"></button>
+	<script>
+		var txt= document.querySelector('.text')
+		var btn= document.querySelector('.btn')
+		btn.onclick=function(){
+			// alert('hao')
+			var sum=0
+			for(var i=1;i<=Number(txt.value);i++){
+				 sum=sum+i
+				 
+				
+			}
+			if(i>Number(txt.value)){
+				 	alert(sum)
+				 }
+
+		}
+	</script>
+</body>
+</html>

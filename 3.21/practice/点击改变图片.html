@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			background-color: blue;
+			width: 200px;
+			height: 200px;
+		}
+		.box2{
+			background-color: black;
+			width: 200px;
+			height: 200px;
+		}
+		@keyframes shabi{
+
+		}
+	</style>
+</head>
+		
+<body>
+	<!-- <img src="2.jpg" alt="" class="1"> -->
+	<div class="box1"></div>
+	<script src="jquery.js"></script>
+	<script>
+	// 改变样式
+		// $('img').click(function(){
+		// 	$('img').attr('src','1.jpg')
+		// })
+	// 改变class
+		$('.box1').click(function(){
+			$('.box1').toggleClass('box2')
+		})
+
+	</script>
+</body>
+</html>
