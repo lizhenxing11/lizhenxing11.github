@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			background-color: #00f;
+			width: 200px;
+			height: 200px;
+			margin:0;
+			padding: 0;
+		}
+		.active{
+			background-color: #f00;
+			width: 200px;
+			height: 200px;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<button>添加class</button>
+	<script>
+		var box=document.querySelector('.box')
+		var btn=document.querySelector('button')
+		function addClass(dom,str){
+			var cname=dom.className;
+			var newName="";
+			cname?newName=cname+" "+str:newName=str;
+			dom.className=newName
+		}
+		btn.onclick=function(){
+			addClass(box,"active")
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="number" class="txt">
+	<button class="bnt">猜数字</button>
+	<script>
+		var txt=document.querySelector('.txt')
+		var btn=document.querySelector('.bnt')
+		var i=Math.floor(Math.random()*100)
+		console.log(i)
+		btn.onclick=function(){
+			if(txt.value==i){
+				alert('这就对了')
+			}else if(txt.value>i){
+				alert('你傻逼啊')
+			}else if(txt.value<i){
+				alert('真他妈傻逼')
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="btn">-</button>
+	<input type="number" class="txt">
+	<button class="btn1">+</button>
+</body>
+<script>
+	var btn=document.querySelector('.btn')
+	var txt=document.querySelector('.txt')
+	var btn1=document.querySelector('.btn1')
+	txt.value=0;
+	btn.onclick=function(){
+		var i=Number(txt.value)
+		txt.value=--i
+		if(Number(txt.value)<=0){
+		txt.value=0;
+	}
+	}
+	btn1.onclick=function(){
+		var i=Number(txt.value)
+		txt.value=++i
+	}
+
+</script>
+</html>

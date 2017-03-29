@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="number" class="txt1">
+	<input type="text" class="txt2">
+	<input type="number" class="txt3">
+	<button class="btn">jisuan</button>
+	<script>
+		var txt1=document.querySelector('.txt1')
+		var txt2=document.querySelector('.txt2')
+		var txt3=document.querySelector('.txt3')
+		var btn=document.querySelector('.btn')
+		btn.onclick=function(){
+			// console.log(0)
+			var num1=txt1.value
+			var num2=txt3.value
+			
+			switch(txt2.value){
+				case'+':alert(num1+num2);break;
+				case'-':alert(num1-num2);break;
+				case'*':alert(num1*num2);break;
+				case'/':alert(num1/num2);break;
+
+			}
+		}
+	</script>
+</body>
+</html>

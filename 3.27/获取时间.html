@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>1</h1>
+	<button>获取时间</button>	
+	<audio src="media.mp3" controls></audio>
+	<script>
+
+	// setInterval(fun,1000)
+		var h=document.querySelector('h1')
+		var btn=document.querySelector('button')
+	// 	function fun(){
+	// 		var date=new Date;
+	// 		var hour = date.getHours();
+	// 		var minute = date.getMinutes();
+	// 		var second = date.getSeconds();
+	// 		var time=fnW(hour)+':'+fnW(minute)+':'+fnW(second)
+	// 		h.innerHTML=time;
+	// 		}
+	// 		function fnW(str){
+	// 		var num;
+	// 		str>=10?num=str:num="0"+str;
+	// 		return num;
+	// 		} 
+	function fnW(str){
+		var num=0;
+		str>=10?num=str:num="0"+str;
+		return num;
+
+	}
+	var t = setInterval(fun,1000)
+	var audio=document.querySelector('audio')
+		console.log(audio)
+	function fun(){
+		var now=new Date
+		var nowtime=now.getTime()
+		var gole=new Date("2017-3-27 15:11")
+		var goletime=gole.getTime()
+		var cha=goletime-nowtime
+		var hours=Math.floor(cha/(1000*60*60))
+		var minutes=Math.floor(cha%(1000*60*60)/(1000*60))
+		var seconds=Math.floor(cha%(1000*60*60)%(1000*60)/(1000))
+		var chatime=fnW(hours)+':'+fnW(minutes)+':'+fnW(seconds)	
+		h.innerHTML=chatime
+		if(cha<0){
+			cha=0
+			h.innerHTML="00:00:00"
+
+		}
+
+
+		if(cha==0){
+			audio.play();
+			clearInterval(t)
+		}
+		console.log(cha)
+	}
+	btn.onclick=function(){
+		audio.pause() 	
+	}
+		
+		
+		
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h1{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>5</h1><h1>秒后跳转到百度</h1>
+	<script>
+
+		var p=document.querySelector('h1')
+		var n = 5;
+		setInterval(function(){
+			n--;
+			p.innerHTML=n
+			if(n===0){
+				location.href = "http://baidu.com";
+			}
+		},1000)
+		
+	</script>
+</body>
+</html>

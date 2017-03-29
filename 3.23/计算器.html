@@ -17,19 +17,20 @@
 		
 		
 		btn.onclick=function(){
+			var t=""
 			if(sign.value=='+')
 			{
-				alert(Number(txt1.value)+Number(txt2.value))
+				t=Number(txt1.value)+Number(txt2.value)
 			}
 		else{
 			if (sign.value=='-') {
-				alert(Number(txt1.value)-Number(txt2.value))
+				t=Number(txt1.value)-Number(txt2.value)
 			}else{
 				if (sign.value=='*') {
-					alert(Number(txt1.value)*Number(txt2.value))
+					t=Number(txt1.value)*Number(txt2.value)
 				}else{
 					if (sign.value=='/') {
-						alert(Number(txt1.value)/Number(txt2.value))
+						t=Number(txt1.value)/Number(txt2.value)
 					}
 				}
 			}

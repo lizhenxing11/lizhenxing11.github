@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="heh">hah</h1>
+	<script>
+		var h1=document.querySelector('h1')
+		function addClass(dom,str){
+			if(dom.className){
+				var newName=dom.className+' '+str
+			}else{
+				var newName=str
+			}
+			dom.className=newName
+		}
+		function removeClass(obj, cls) {  
+    		if (hasClass(obj, cls)) {  
+       		var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');  
+        	obj.className = obj.className.replace(reg, ' ');  
+    }  
+}  
+		removeClass(h1,"heh")
+	</script>	
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="jian">-</button>
+	<span>0</span>
+	<button class="add">+</button>
+	<script>
+		var jian=document.querySelector('.jian')
+		var add=document.querySelector('.add')
+		var span=document.querySelector('span')
+		var i=0
+		jian.onclick=function(){
+			if(i){
+			i--
+			span.innerHTML=i
+		}}
+		add.onclick=function(){
+			
+			i++
+			span.innerHTML=i
+		}
+	</script>
+</body>
+</html>

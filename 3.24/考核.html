@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="1.jpg" alt="">
+	<div>
+	<button class="1"></button>
+	<button class="1"></button>
+	<button class="1"></button>
+	<button class="1"></button>
+	</div>
+	<script src="jquery.js"></script>
+	<script>
+		$('.1').click(function(){
+			var ind=$(this).index()
+			console.log("ind")
+			var picsrc = [
+				'1.jpg',
+				'2.jpg',
+				'3.jpg',
+				'4.jpg'
+			]
+			console.log(picsrc[ind])
+			$('img').attr('src',picsrc[ind])
+		})
+	</script>
+</body>
+</html>
