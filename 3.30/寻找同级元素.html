@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li class="num1">哈哈</li>
+		<li class="num2">呵呵</li>
+		<li class="num3">吼吼</li>
+		<li class="num4">嘿嘿</li>
+		<li class="num5">阿达</li>
+	</ul>
+	<script>
+		var one=document.querySelectorAll('li')
+		function sibbling(dom){
+		var parent=dom.parentNode
+		var child=parent.children
+		var arr=[]
+		for(var i=0;i<child.length;i++){
+			if(child[i]!==dom){
+				arr.push(child[i])
+			}
+		}
+		return arr
+	}
+		for(var i=0;i<one.length;i++){
+			one[i].onclick=function(){
+				console.log(sibbling(this));
+
+			}
+
+		}
+
+	</script>
+</body>
+</html>

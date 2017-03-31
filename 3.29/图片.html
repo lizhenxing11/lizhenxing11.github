@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.active{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<img src="1.jpg" alt="">
+	<button class="active">1</button>
+	<button>2</button>
+	<button>3</button>
+	<button>4</button>
+	<script>
+	(function(){
+		var img=document.querySelector('img')
+		var btn=document.querySelectorAll('button')
+		var pic=["1.jpg","2.jpg","3.jpg","4.jpg"]
+		function removeClass(dom,deadClassName){
+			var t=dom.className
+			var arr=t.split(" ")
+			// console.log(arr)
+			for(var i=0;i<arr.length;i++){
+				if(arr[i]===deadClassName){
+					arr.splice(i,1)
+					// console.log("//////////")
+					// console.log(i);
+				}
+				
+			}
+			dom.className=arr.join(" ")
+			
+		}
+		function addClass(dom,str){
+			if(dom.className){
+				var newName=dom.className+' '+str
+			}else{
+				var newName=str
+			}
+			dom.className=newName
+		}
+		function sibbling(dom){
+			var parent=dom.parentNode;
+			var children=parent.children
+			var arr=[]
+			for(var n=0;n<children.length;n++){
+				if(children[n]!==dom){
+					arr.push(children[n])
+				}	
+			}
+			return arr
+		}
+		for(var i=0;i<btn.length;i++){
+			btn[i].onclick=function fun(x){
+				return function(){
+					img.src=pic[x]
+					i=x
+					addClass(this,"active")
+					var tongji=sibbling(this)
+					for(var num=0;num<tongji.length;num++){
+						removeClass(tongji[num],"active")
+					}
+					
+				}
+			}(i)
+		}
+		var i=0
+		function fun(){
+			
+			i=(i<pic.length-1 ? i+1 : 0);
+				
+				img.src=pic[i]
+				addClass(btn[i],"active")
+				var tongji=sibbling(btn[i])
+				for(var num=0;num<tongji.length;num++){
+				removeClass(tongji[num],"active")
+					}
+			}
+		// var qq = 0
+		// // function fun(){
+		// // 	qq++
+		// // 	if(qq===pic.length){
+		// // 		qq=0
+		// // 		img.src = pic[qq];
+		// // 	}else{
+		// // 		console.log(qq)
+		// // 	img.src = pic[qq];
+			
+		// // 	}
+			
+		// // }
+
+		var t=setInterval(fun,1000)
+		img.onmouseover=function(){clearInterval(t)}
+		img.onmouseout=function(){t=setInterval(fun,1000)}
+
+})()
+	</script>
+</body>
+</html>

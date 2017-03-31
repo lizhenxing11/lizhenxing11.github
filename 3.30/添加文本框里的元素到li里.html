@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text">
+	<button>添加水果</button>
+	<ul>
+		<li>苹果</li>
+		<li>香蕉</li>
+		<li>鸭梨</li>
+		<li>西红柿</li>
+	</ul>
+	<script>
+		
+		
+		var btn=document.querySelector('button')
+		var input=document.querySelector('input')
+		var li=document.querySelectorAll('li')
+		var oul=document.querySelector('ul')
+
+		btn.onclick=function(){
+			
+			var oli=document.createElement('li')
+			oli.innerHTML=input.value
+			oul.appendChild(oli)
+			var li=document.querySelectorAll('li')
+			for(var i=0;i<li.length;i++){
+				li[i].onclick=function(){
+					oul.removeChild(this)
+					console.log(oli.length)
+				}
+			}
+		}
+		
+		for(var i=0;i<li.length;i++){
+				li[i].onclick=function(){
+					oul.removeChild(this)
+					
+				}
+			}
+
+
+	</script>
+</body>
+</html>

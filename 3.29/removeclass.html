@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="add hah hehe">嘿嘿</h1>
+<!-- 	<button>删除元素</button> -->
+	<script>
+		var h=document.querySelector('h1')
+		function fun(dom,deadClassName){
+			var t=dom.className
+			var arr=t.split(" ")
+			// console.log(arr)
+			for(var i=0;i<arr.length;i++){
+				if(arr[i]===deadClassName){
+					arr.splice(i,1)
+					// console.log("//////////")
+					// console.log(i);
+				}
+				
+			}
+			dom.className=arr.join(" ")
+			
+		}
+		fun(h,"add")
+	</script>
+</body>
+</html>

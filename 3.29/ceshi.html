@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="hah hehe">hah</h1>
+	<script>
+	var h=document.querySelector('h1')
+		function removeClass(dom,str){
+		var arr=dom.className.split(" ");
+		for(var i=0;i<arr.length;i++){
+			var newarr="";
+			arr[i]===str?arr.splice(i,1):"";
+			dom.className=arr.join(" ")
+		}
+	}
+	removeClass(h,'hah')
+	</script>
+</body>
+</html>
